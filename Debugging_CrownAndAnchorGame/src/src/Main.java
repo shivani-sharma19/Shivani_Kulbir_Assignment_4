@@ -51,9 +51,9 @@ public class Main {
                     System.out.printf("Rolled %s, %s, %s\n",
                     		cdv.get(0), cdv.get(1), cdv.get(2));
                     
-                    if (winnings > 0) {
+                    if (winnings-bet > 0) {
 	                    System.out.printf("%s won %d, balance now %d\n\n",
-	                    		player.getName(), winnings, player.getBalance());
+	                    		player.getName(), winnings - bet, player.getBalance());
 	                	winCount++; 
                     }
                     else {
